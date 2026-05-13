@@ -7,7 +7,7 @@ export interface Brief {
   submitter_name: string;
   submitter_email: string;
 
-  created_at: string;
+  created_at: string; 
   deadline?: string;
 
   department?: string;
