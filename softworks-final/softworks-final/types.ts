@@ -2,7 +2,6 @@ export interface Brief {
   id: string;
   project_title?: string;
   status: string;
-  department?: string;
   priority: string;
 
   submitter_name: string;
@@ -11,8 +10,14 @@ export interface Brief {
   created_at: string;
   deadline?: string;
 
+  department?: string;
+
   goals?: string[];
   ambiguities?: string[];
+
+  manager_notes?: string;
+  approved_at?: string;
+  approved_by?: string;
 
   structured_brief?: {
     summary?: string;
@@ -22,16 +27,9 @@ export interface Brief {
     ambiguities?: string[];
   };
 
-  manager_notes?: string;
-
-  approved_at?: string;
-  approved_by?: string;
-
-  brief_assets?: BriefAsset[];
-
+  share_token?: string;
   share_token_expires_at?: string;
 }
-
 export interface BriefAsset {
   id: string;
   file_name: string;
