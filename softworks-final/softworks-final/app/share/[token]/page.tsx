@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
-import type { Brief, BriefAsset } from '../../types';
+import type { Brief, BriefAsset } from '../../../types';
 
 type BriefWithAssets = Brief & { brief_assets: (BriefAsset & { signed_url?: string })[] };
 
